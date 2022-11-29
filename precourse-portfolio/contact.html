@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nology precourse portfolio</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class='logo'>
+            <a href='index.html'>
+                <h1 class='logotitle'>_nology 
+                    <span>we love rubber ducks</span>
+                </h1>
+            </a>
+        </div>
+        <ul class="navbar-ul-pages">
+            <li class="navbar-li-links">
+                <a href="index.html" class="navbar-text">Home</a>
+            </li>
+            <li class="navbar-li-links">
+                <a href="about.html" class="navbar-text">About</a>
+            </li>
+            <li class="navbar-li-links">
+                <a href="contact.html" class="navbar-text">Contact us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class='contact-form'>
+        <h2 class='contact-form-title'>Contact Us</h2>
+        <p class='contact-form-paragraph'>You love rubber ducks! We love rubber ducks! <br>Let's grow the rubber duck community together </p>
+        <form class='contact-form-grid' onsubmit='return submitMessage(event);'>
+            <div class='contact-form-grid-item'>
+                <label for='name'>Name</label>
+                <input type='text' name='name' id='name' placeholder='Enter your first and last name'>
+            </div>
+            <div class='contact-form-grid-item'>
+                <label for='email'>Email</label>
+                <input type='email' name='email' id='email' placeholder='Enter your email' required>
+            </div>
+            <div class='contact-form-grid-item'>
+                <label for='message'>Message</label>
+                <textarea name='message' id='message' cols='20' rows='3' placeholder='Enter your message' required></textarea>
+            </div>
+            <div class='contact-form-grid-item'>
+                <button type='reset'>Clear</button>
+            </div>
+            <div class='contact-form-grid-item'>
+                <button type='submit'>Submit</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class='footer-form-title'>
+            <h2 class='footer-form-title-text'>Growing the community</h2>
+            <p>one rubber duck at a time</p>
+            <button onclick="clearMessages()">Clear Messages</button>
+        </div>
+        <div class='footer-form-messages'>
+            <dl id="contactFormArrays"></dl>
+        </div>
+    </footer>
+
+    <script src='script.js'></script>
+</body>
+</html>
